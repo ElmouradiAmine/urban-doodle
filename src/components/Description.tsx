@@ -1,5 +1,3 @@
-import Box from "./Box";
-
 const Description = () => {
   return (
     <ul className="flex flex-col space-y-2 items-start">

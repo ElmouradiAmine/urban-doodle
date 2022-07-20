@@ -1,14 +1,20 @@
 import { generateGrid } from "../utils";
 import Box from "./Box";
 
-const grid = generateGrid(10);
+type GridProps = {
+  size: number;
+};
 
-export const Grid = () => {
+const Grid = ({ size }: GridProps) => {
+  const grid = generateGrid(size);
+
   return (
-    <div className="grid grid-cols-8 sm:grid-cols-10 gap-2">
-      {grid.map((value) => (
-        <Box value={value} />
+    <div className="grid grid-cols-8 sm:grid-cols-10 gap-2 max-h-[75vh] overflow-y-auto m-4">
+      {grid.map((value, index) => (
+        <Box key={index} value={value} />
       ))}
     </div>
   );
 };
+
+export default Grid;

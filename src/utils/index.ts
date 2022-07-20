@@ -1,9 +1,7 @@
 export const generateGrid = (size: number): number[] => {
   const grid = [];
   for (let i = 0; i < size; i++) {
-    for (let i = 0; i < size; i++) {
-      grid.push(generateNumber(1, 100));
-    }
+    grid.push(generateNumber(1, 100));
   }
   return grid;
 };
