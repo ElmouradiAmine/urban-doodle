@@ -61,56 +61,20 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="grid grid-cols-5 md:grid-cols-10 mt-12 justify-between md:ml-48 lg:ml-52 gap-4 ">
-          <img
-            src={CssLogo}
-            alt="CSS logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={SassLogo}
-            alt="Sass logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={HtmlLogo}
-            alt="Html logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={TypeScriptLogo}
-            alt="Typescript logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={ReactLogo}
-            alt="React logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={AngularLogo}
-            alt="Angular logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={DartLogo}
-            alt="Dart logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={FlutterLogo}
-            alt="Flutter logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={GitLogo}
-            alt="Git logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
-          <img
-            src={NodeLogo}
-            alt="Node logo"
-            className="lg:w-16 md:w-12 object-scale-down"
-          />
+          {[
+            CssLogo,
+            SassLogo,
+            HtmlLogo,
+            TypeScriptLogo,
+            ReactLogo,
+            AngularLogo,
+            DartLogo,
+            FlutterLogo,
+            GitLogo,
+            NodeLogo,
+          ].map((image) => (
+            <img src={image} className="lg:w-16 md:w-12 object-scale-down" />
+          ))}
         </div>
       </div>
     </div>
