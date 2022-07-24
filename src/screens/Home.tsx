@@ -15,7 +15,7 @@ const Home = () => {
   };
 
   return (
-    <div className="h-screen bg-gray-900 flex flex-col justify-center">
+    <div className="min-h-screen bg-gray-900 flex flex-col justify-center">
       <p className="font-logo text-white text-3xl lg:text-5xl lg:p-4 lg:-translate-y-6 text-center">
         <span className="text-blue-500">Fi</span>
         <span className="">zz</span>
