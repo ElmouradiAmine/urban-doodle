@@ -8,6 +8,7 @@ import HtmlLogo from "../assets/html-logo.png";
 import GitLogo from "../assets/git-logo.png";
 import DartLogo from "../assets/dart-logo.png";
 import FlutterLogo from "../assets/flutter-logo.svg";
+import NodeLogo from "../assets/node-logo.png";
 
 const AboutMe = () => {
   return (
@@ -16,7 +17,7 @@ const AboutMe = () => {
         <span className="text-blue-500">Ab</span>
         <span className="">out</span> <span className="text-red-500">Me</span>
       </p>
-      <div className="m-6">
+      <div className="m-6 text-sm md:text-base">
         <div className="flex max-w-6xl space-y-8 md:space-y-0 md:space-x-8 items-center flex-col md:flex-row">
           <img
             src={ProfilePicture}
@@ -59,7 +60,7 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-9 mt-12 justify-between md:ml-48 lg:ml-52 gap-2 ">
+        <div className="grid grid-cols-5 md:grid-cols-10 mt-12 justify-between md:ml-48 lg:ml-52 gap-4 ">
           <img
             src={CssLogo}
             alt="CSS logo"
@@ -103,6 +104,11 @@ const AboutMe = () => {
           <img
             src={GitLogo}
             alt="Git logo"
+            className="lg:w-16 md:w-12 object-scale-down"
+          />
+          <img
+            src={NodeLogo}
+            alt="Node logo"
             className="lg:w-16 md:w-12 object-scale-down"
           />
         </div>
